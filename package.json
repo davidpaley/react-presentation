@@ -1,0 +1,27 @@
+{
+  "name": "react-presentation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "mdx-deck deck.mdx",
+    "build": "mdx-deck build deck.mdx"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidpaley/react-presentation.git"
+  },
+  "author": "David Paley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davidpaley/react-presentation/issues"
+  },
+  "homepage": "https://github.com/davidpaley/react-presentation#readme",
+  "devDependencies": {
+    "mdx-deck": "^1.7.7"
+  },
+  "dependencies": {
+    "mdx-deck-code-surfer": "^0.5.1",
+    "raw-loader": "^0.5.1"
+  }
+}

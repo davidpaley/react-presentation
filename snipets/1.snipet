@@ -1,0 +1,19 @@
+import React from "react";
+import "./index.css";
+
+export default class CTAFAQ extends React.Component {
+  render() {
+    return (
+      <div className="cta-faq-container xs-px2 sm-px2 md-px4 lg-px4">
+        <button type="button" className="cta-faq-btn">
+          <a href="/faq">
+            <span className="cta-faq-text">Got questions? Check out our FAQs</span>
+            <svg className="icon icon-arrow-next">
+              <use xlinkHref="#icon-arrow-next" />
+            </svg>
+          </a>
+        </button>
+      </div>
+    );
+  }
+}
