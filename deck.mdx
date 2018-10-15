@@ -64,7 +64,54 @@ export { dark as theme } from 'mdx-deck/themes'
 ---
 <Image src="router-2.png" size="1500px" />
 ---
-## Where to learn more
+## Where I could learn more?
+---
+<CodeSurfer
+    code={require("raw-loader!./snipets/router.snipet")} 
+    lang="javascript"
+    showNumbers={false}
+    dark={true}
+    steps={[
+        { range: [0, 30], notes: "Range" },
+        { lines: [1], notes: "Line" },
+        { range: [4, 7], notes: "Range" },
+        { lines: [3, 8], notes: "Line" },
+        // { tokens: {1: [2,6]}, notes: "Tokens" },
+        // { notes: "Start with this note"},
+        // { lines: [6], notes: "Note for the first step" },
+        // { range: [5, 9] },
+        // { tokens: { 9: [3, 4, 5] }, notes: "Note for the third step" }
+    ]}
+/>
+---
+<CodeSurfer
+    code={require("raw-loader!./snipets/router-2.snipet")} 
+    lang="javascript"
+    showNumbers={false}
+    dark={true}
+    steps={[
+        { range: [0, 30], notes: "Range" },
+        { tokens: {3: [5,6,7,8,9,10,11,12,13,14]}, notes: "Tokens" },
+    ]}
+/>
+---
+<CodeSurfer
+    code={require("raw-loader!./snipets/router-3.snipet")} 
+    lang="javascript"
+    showNumbers={false}
+    dark={true}
+    steps={[
+        { range: [0, 30], notes: "Range" },
+        { tokens: {3: [5,6,7,8,9,10,11,12,13,14]}, notes: "Tokens" },
+    ]}
+/>
+---
+<CodeSurfer
+    code={require("raw-loader!./snipets/router-4.snipet")} 
+    lang="javascript"
+    showNumbers={false}
+    dark={true}
+/>
 ---
 #'   '
 #'   '
