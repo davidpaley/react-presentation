@@ -2,6 +2,7 @@ import { Head } from 'mdx-deck';
 import { CodeSurfer } from 'mdx-deck-code-surfer';
 import nightOwl from "prism-react-renderer/themes/nightOwl"
 import vsDark from "prism-react-renderer/themes/vsDark"
+import { Image } from 'mdx-deck'
 // export { condensed as theme } from 'mdx-deck/themes'
 export { dark as theme } from 'mdx-deck/themes'
 
@@ -22,8 +23,8 @@ export { dark as theme } from 'mdx-deck/themes'
 
 ---
 # JAVASCRIPT TOOLCHAIN
-
 ---
+# JAVASCRIPT TOOLCHAIN
 <ul>
     <li>Style linting</li>
     <li>Dependency Management </li>
@@ -32,7 +33,38 @@ export { dark as theme } from 'mdx-deck/themes'
     <li>Minification and Compression </li>
     <li>Source-Mapping </li>
 </ul>
+---
+# REACT COMPONENT LIFE CYCLES
+---
+<ul>
+    <li>componentWillMount() </li>
+    <li>componentWillReceiveProps(object nextProps)</li>
+    <li>componentWillUnmount() </li>
+    <li>componentWillUpdate(object nextProps, object nextState)  </li>
+    <li>componentDidMount()  </li>
+    <li>componentDidUpdate(object prevProps, object prevState)</li>
+    <li>shouldComponentUpdate(object nextState, object nextProps) </li>
+</ul>
+---
+# DEPRECATED IN NEW VERSIONS
+<ul>
+    <li>componentWillMount() </li>
+    <li>componentWillReceiveProps(object nextProps)</li>
+    <li>componentWillUpdate(object nextProps, object nextState)  </li>
+</ul>
 
+---
+# REACT ROUTER
+---
+## CLIENT SIDE VS SERVER SIDE ROUTING
+---
+<Image src="router-1.png" size="800px" />
+---
+## HOW REACT WORKS?
+---
+<Image src="router-2.png" size="1500px" />
+---
+## Where to learn more
 ---
 #'   '
 #'   '
@@ -70,3 +102,5 @@ export { dark as theme } from 'mdx-deck/themes'
 ```jsx
 <Button />
 ``` 
+---
+<Image src='redux-1.png' size="1500px" />
