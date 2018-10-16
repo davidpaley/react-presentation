@@ -113,25 +113,73 @@ export { dark as theme } from 'mdx-deck/themes'
     dark={true}
 />
 ---
-#'   '
-#'   '
-# This is the second one!
+# HIGH ORDER COMPONENT (HOC)
+---
 <CodeSurfer
-    code={require("raw-loader!./snipets/1.snipet")} 
+    code={require("raw-loader!./snipets/hoc-1.snipet")} 
     lang="javascript"
-    showNumbers={true}
+    showNumbers={false}
     dark={true}
-    steps={[
-        { lines: [5], notes: "Line" },
-        { range: [10, 12], notes: "Range" },
-        { ranges: [[4, 6], [11, 13]], notes: "Ranges" },
-        { tokens: {1: [2,6]}, notes: "Tokens" },
-        // { notes: "Start with this note"},
-        // { lines: [6], notes: "Note for the first step" },
-        // { range: [5, 9] },
-        // { tokens: { 9: [3, 4, 5] }, notes: "Note for the third step" }
-    ]}
 />
+---
+<CodeSurfer
+    code={require("raw-loader!./snipets/hoc-1.snipet")} 
+    lang="javascript"
+    showNumbers={false}
+    dark={true}
+/>
+---
+<CodeSurfer
+    code={require("raw-loader!./snipets/hoc-2.snipet")} 
+    lang="javascript"
+    showNumbers={false}
+    dark={true}
+/>
+---
+# Much of their implementation is the same:
+<ul>
+    <li>On mount, add a change listener to DataSource.</li>
+    <li>Inside the listener, call setState whenever the data source changes.</li>
+    <li>On unmount, remove the change listener.</li>
+</ul>
+---
+### We can write a function that creates components, like CommentList and BlogPost, that subscribe to DataSource.
+---
+<CodeSurfer
+    code={require("raw-loader!./snipets/hoc-3.snipet")} 
+    lang="javascript"
+    showNumbers={false}
+    dark={true}
+/>
+---
+<CodeSurfer
+    code={require("raw-loader!./snipets/hoc-4.snipet")} 
+    lang="javascript"
+    showNumbers={false}
+    dark={true}
+/>
+---
+### And that’s it! The wrapped component receives all the props of the container, along with a new prop, data, which it uses to render its output. The HOC isn’t concerned with how or why the data is used, and the wrapped component isn’t concerned with where the data came from.
+---
+# REDUX
+---
+# Common problems of "complex" React applications
+---
+## 1. Share data is not easy
+---
+<Image src='redux-1.png' size="1800px" />
+---
+## 2. The components aren’t really reusable without Redux.
+---
+<Image src='redux-2.png' size="1800px" />
+---
+# So the questions are:
+### -> Where do I store my app state in a complex React app?
+### -> How do I create components that are actually reusable?
+
+The answer of this questions is to use Redux.
+---
+<Image src='redux-3.png' size="1800px" />
 ---
 #'   '
 #'   '
