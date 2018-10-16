@@ -15,12 +15,13 @@ export { dark as theme } from 'mdx-deck/themes'
 
 <CodeSurfer
     theme={nightOwl}
-    code="console.log('Hello world from React =D')"
+    code="console.log('REACT: from Buenos Aires to Brisbane')"
     lang="javascript"
     showNumbers={false}
     dark={true}
 />
-
+---
+<Image src='joke.png' size="1800px" />
 ---
 # JAVASCRIPT TOOLCHAIN
 ---
@@ -52,7 +53,45 @@ export { dark as theme } from 'mdx-deck/themes'
     <li>componentWillReceiveProps(object nextProps)</li>
     <li>componentWillUpdate(object nextProps, object nextState)  </li>
 </ul>
-
+---
+<CodeSurfer
+    code={require("raw-loader!./snipets/cycle-0.snipet")} 
+    lang="javascript"
+    showNumbers={false}
+    dark={true}
+/>
+---
+<CodeSurfer
+    code={require("raw-loader!./snipets/cycle-1.snipet")} 
+    lang="javascript"
+    showNumbers={false}
+    dark={true}
+/>
+---
+## getDerivedStateFromProps
+---
+<CodeSurfer
+    code={require("raw-loader!./snipets/cycle-2.snipet")} 
+    lang="javascript"
+    showNumbers={false}
+    dark={true}
+/>
+---
+## getSnapshotBeforeUpdate
+---
+<CodeSurfer
+    code={require("raw-loader!./snipets/cycle-3.snipet")} 
+    lang="javascript"
+    showNumbers={false}
+    dark={true}
+/>
+---
+<CodeSurfer
+    code={require("raw-loader!./snipets/cycle-4.snipet")} 
+    lang="javascript"
+    showNumbers={false}
+    dark={true}
+/>
 ---
 # REACT ROUTER
 ---
@@ -63,8 +102,6 @@ export { dark as theme } from 'mdx-deck/themes'
 ## HOW REACT WORKS?
 ---
 <Image src="router-2.png" size="1500px" />
----
-## Where I could learn more?
 ---
 <CodeSurfer
     code={require("raw-loader!./snipets/router.snipet")} 
@@ -123,13 +160,6 @@ export { dark as theme } from 'mdx-deck/themes'
 />
 ---
 <CodeSurfer
-    code={require("raw-loader!./snipets/hoc-1.snipet")} 
-    lang="javascript"
-    showNumbers={false}
-    dark={true}
-/>
----
-<CodeSurfer
     code={require("raw-loader!./snipets/hoc-2.snipet")} 
     lang="javascript"
     showNumbers={false}
@@ -177,25 +207,22 @@ export { dark as theme } from 'mdx-deck/themes'
 ### -> Where do I store my app state in a complex React app?
 ### -> How do I create components that are actually reusable?
 
-The answer of this questions is to use Redux.
+The answer to these questions is to use Redux.
 ---
 <Image src='redux-3.png' size="1800px" />
 ---
-#'   '
-#'   '
-# Este es el codigo con CodeSurfer customizado con theme vsDark:
-
 <CodeSurfer
-    theme={vsDark}
-    code={require("raw-loader!./snipets/1.snipet")} 
+    code={require("raw-loader!./snipets/redux-1.snipet")} 
     lang="javascript"
-    showNumbers={true}
+    showNumbers={false}
     dark={true}
+    steps={[
+        { range: [0, 30], notes: "Range" },
+        { tokens: {1: [3]}, notes: "Tokens" },
+        { range: [18, 30], notes: "Range" },
+        { range: [3, 17], notes: "Range" },
+        { range: [0, 30], notes: "Range" },
+    ]}
 />
-
 ---
-```jsx
-<Button />
-``` 
----
-<Image src='redux-1.png' size="1500px" />
+# Any question?
