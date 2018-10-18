@@ -1,8 +1,10 @@
-import { Head } from 'mdx-deck';
-import { CodeSurfer } from 'mdx-deck-code-surfer';
-import nightOwl from "prism-react-renderer/themes/nightOwl"
-import vsDark from "prism-react-renderer/themes/vsDark"
+import { Head } from 'mdx-deck'
+import { CodeSurfer } from 'mdx-deck-code-surfer'
+import nightOwl from 'prism-react-renderer/themes/nightOwl'
+import vsDark from 'prism-react-renderer/themes/vsDark'
 import { Image } from 'mdx-deck'
+import { Appear } from 'mdx-deck'
+import { SplitRight } from 'mdx-deck/layouts'
 // export { condensed as theme } from 'mdx-deck/themes'
 export { dark as theme } from 'mdx-deck/themes'
 
@@ -21,9 +23,7 @@ export { dark as theme } from 'mdx-deck/themes'
     dark={true}
 />
 ---
-<Image src='joke.png' size="1800px" />
----
-# JAVASCRIPT TOOLCHAIN
+<Image src='joke.png' size='cover' />
 ---
 # JAVASCRIPT TOOLCHAIN
 <ul>
@@ -34,6 +34,25 @@ export { dark as theme } from 'mdx-deck/themes'
     <li>Minification and Compression </li>
     <li>Source-Mapping </li>
 </ul>
+---
+<div>
+    <h1
+        className="sc-jzJRlG enxKql sc-fjdhpX dYzIWH"
+        fontSize="4"
+        color="heading"
+        style={{ marginTop: '150px' }}
+    >REACT COMPONENT</h1>
+    <ul>
+        <li>Props</li>
+        <li>State</li>
+        <li>Inheritance functions (construct and render)</li>
+        <li>refs in tag element</li>
+    </ul>
+    <Image src='react-component.png' size='1000px 300px' style={{ marginTop: '-200px' }}/>
+</div>
+---
+# WEBSITE ARCHITECTURE
+<Image src='folder-structure.png' size='auto 70vh' style={{ marginTop: '-100px' }} />
 ---
 # REACT COMPONENT LIFE CYCLES
 ---
@@ -150,6 +169,15 @@ export { dark as theme } from 'mdx-deck/themes'
     dark={true}
 />
 ---
+# ES6
+<Appear>
+    <li>Arrow functions</li>
+    <li>Constants</li>
+    <li>Template literals</li>
+    <li>Destructuring assignment</li>
+    <li>Export / Import</li>
+</Appear>
+---
 # HIGH ORDER COMPONENT (HOC)
 ---
 <CodeSurfer
@@ -224,5 +252,17 @@ The answer to these questions is to use Redux.
         { range: [0, 30], notes: "Range" },
     ]}
 />
+---
+# Good practices
+<Appear>
+    <li>Small components</li>
+    <li>Short lines</li>
+    <li>Use ES6 and Javascript functions as reduce, map, filter, ...</li>
+    <li>Make component stateless if possible</li>
+    <li>Avoid using componentDidMount and componentWillMount if it's possible</li>
+</Appear>
+---
+# Prerender
+### React-snap vs SSR vs Nextjs vs Gatsby
 ---
 # Any question?
